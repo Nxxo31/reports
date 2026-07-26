@@ -1,0 +1,45 @@
+# Node.js / Next.js / React
+node_modules/
+.next/
+dist/
+build/
+.env
+.env.local
+.env*.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+venv/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Hermes / AI context (deprecated)
+CURRENT_TASK.md
+STATE.md
+
+# Dependencies
+package-lock.json
+yarn.lock

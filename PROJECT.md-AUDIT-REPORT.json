@@ -1,0 +1,663 @@
+{
+  "audit": {
+    "date": "2026-07-12",
+    "auditor": "Hermes Agent (subagent)",
+    "total_projects": 13,
+    "scope": "All PROJECT.md files in /home/sebas/proyectos/",
+    "criteria": {
+      "sections_checked": [
+        "Roadmap/Objective section (plan, phases, goals)",
+        "Operational State (current task, progress, phase status)",
+        "Technical Decisions section (architecture decisions, design patterns)",
+        "Limitations/Known Bugs section",
+        "Orphan .md files to merge (old CURRENT_TASK.md, STATE.md, blueprint docs, standalone reports)"
+      ],
+      "ratings": ["OK", "INCOMPLETE", "MISSING"]
+    }
+  },
+  "projects": [
+    {
+      "name": "nva-demons",
+      "path": "/home/sebas/proyectos/nva-demons",
+      "size_bytes": 6495,
+      "size_lines": 157,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "Clear 3-phase roadmap (Front-end MVP, Ticketing, Production) with checkboxes. Well-defined concept and tech stack."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "Status indicator at bottom: '🟢 Fase 1 — Desarrollo Front-end'. Phase checklist with completed items marked."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "Detailed tech stack tables for both Landing Page and Ticketing. Research section on 3D libraries with comparison table. Cursor burn effect approach documented."
+        },
+        "limitations_known_bugs": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No limitations or known bugs section. Project is pre-MVP so this is expected but should be added as development progresses."
+        }
+      },
+      "orphan_files": [],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md"],
+      "recommended_actions": [
+        "Add Limitations/Known Bugs section as development encounters issues",
+        "Update Operational State with current progress (last modified 2026-07-10, seems stale)",
+        "No orphan files to merge"
+      ]
+    },
+    {
+      "name": "triqui",
+      "path": "/home/sebas/proyectos/triqui",
+      "size_bytes": 2400,
+      "size_lines": 76,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "Roadmap section with 'Próximos features' checklist. Clear current status 'V2 — Activa'."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "✅ Completado section with detailed feature list. 🔜 Próximos features with checkboxes. Testing pending item noted."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "Stack table present. Archivos clave listing. Reglas de desarrollo documented. No deep architectural decisions documented."
+        },
+        "limitations_known_bugs": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No limitations or known bugs section. Testing pending (E2E setup untracked) is noted but no bug tracker."
+        }
+      },
+      "orphan_files": [],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md", "docs/ARCHITECTURE.md"],
+      "recommended_actions": [
+        "docs/ARCHITECTURE.md is a structured technical doc — consider linking from PROJECT.md rather than merging",
+        "Add Limitations/Known Bugs section",
+        "Consider noting the untracked playwright test setup as a pending integration item"
+      ]
+    },
+    {
+      "name": "NexoAccManager-Backend",
+      "path": "/home/sebas/proyectos/NexoAccManager-Backend",
+      "size_bytes": 226,
+      "size_lines": 9,
+      "rating": "MISSING",
+      "sections": {
+        "roadmap_objective": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No roadmap or objectives. Stub created by ecosystem-sweep."
+        },
+        "operational_state": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "Only says 'Sin definir — proyecto nuevo o sin actividad reciente'. No real state information."
+        },
+        "technical_decisions": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No technical decisions documented."
+        },
+        "limitations_known_bugs": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No limitations section."
+        }
+      },
+      "orphan_files": [],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md"],
+      "recommended_actions": [
+        "URGENT: PROJECT.md is a 9-line stub. The AGENTS.md has rich context (stack, commands, rules, work loop) — migrate that content into PROJECT.md.",
+        "AGENTS.md references 'cat CURRENT_TASK.md' but no such file exists — remove stale reference",
+        "The parent NexoAccManager PROJECT.md (35KB) contains Backend API endpoints and sprint details — extract relevant backend info into this PROJECT.md",
+        "Add Roadmap, Operational State, Technical Decisions, and Limitations sections"
+      ]
+    },
+    {
+      "name": "reports",
+      "path": "/home/sebas/proyectos/reports",
+      "size_bytes": 257,
+      "size_lines": 10,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": false,
+          "quality": "N/A",
+          "notes": "Not a code project — directory of reports. No roadmap needed."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "Self-documents as 'Directorio de reportes — no es un proyecto de código activo'."
+        },
+        "technical_decisions": {
+          "present": false,
+          "quality": "N/A",
+          "notes": "Not applicable for non-code project."
+        },
+        "limitations_known_bugs": {
+          "present": false,
+          "quality": "N/A",
+          "notes": "Not applicable."
+        }
+      },
+      "orphan_files": [],
+      "all_md_files": ["PROJECT.md", "README.md"],
+      "recommended_actions": [
+        "No changes needed — correctly self-identifies as non-code directory",
+        "Consider adding a brief listing of what reports exist in the directory"
+      ]
+    },
+    {
+      "name": "NexoAccManager-Landing",
+      "path": "/home/sebas/proyectos/NexoAccManager-Landing",
+      "size_bytes": 226,
+      "size_lines": 9,
+      "rating": "MISSING",
+      "sections": {
+        "roadmap_objective": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No roadmap. Stub created by ecosystem-sweep."
+        },
+        "operational_state": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "Only says 'Sin definir'. No real state even though parent PROJECT.md shows extensive landing progress."
+        },
+        "technical_decisions": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No technical decisions."
+        },
+        "limitations_known_bugs": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No bugs documented. Parent PROJECT.md mentions pre-rendering warnings in ClientLayout."
+        }
+      },
+      "orphan_files": [],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md"],
+      "recommended_actions": [
+        "URGENT: 9-line stub. AGENTS.md has stack/commands/rules — migrate into PROJECT.md",
+        "Parent NexoAccManager PROJECT.md documents sprints L1-L5 as completed — extract landing-specific state into this PROJECT.md",
+        "Document known bug: pre-rendering errors in login/register/dashboard (ClientLayout pattern)",
+        "Add Roadmap with completed sprints and pending deploy tasks",
+        "Document deploy decision: Oracle Cloud + Dokploy (not Vercel)"
+      ]
+    },
+    {
+      "name": "portafolio",
+      "path": "/home/sebas/proyectos/portafolio",
+      "size_bytes": 8123,
+      "size_lines": 160,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "EXCELLENT",
+          "notes": "5-phase plan (Foundation through SEO/Performance) with detailed task breakdowns per phase. Objectives with Lighthouse targets. Structured functional/non-functional requirements tables."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "EXCELLENT",
+          "notes": "Phase progress table at top with clear status indicators (✅ Completo / 🔄 Pendiente). Phase 5 is current active phase."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "Key decisions documented: prefer CSS native over GSAP/Framer, data centralization in data.ts. Component architecture tree. Testing/QA checklist."
+        },
+        "limitations_known_bugs": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No explicit limitations/bugs section. Pre-deploy testing checklist exists but no known issues tracker."
+        }
+      },
+      "orphan_files": [],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md", "docs/ARCHITECTURE.md"],
+      "recommended_actions": [
+        "docs/ARCHITECTURE.md (6.5KB, 103 lines) overlaps significantly with PROJECT.md sections 2-5 — consider merging key details or referencing it",
+        "Add Limitations/Known Bugs section for any issues found during Phase 5 (SEO/Performance)",
+        "Update operational state — last modified 2026-07-07; check if Phase 5 progress changed"
+      ]
+    },
+    {
+      "name": "NexoAccManager",
+      "path": "/home/sebas/proyectos/NexoAccManager",
+      "size_bytes": 35759,
+      "size_lines": 834,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "EXCELLENT",
+          "notes": "Extremely detailed roadmap with sprints E1-E8 (all complete), L1-L5, B1-B5. Feature phases 1-8 documented with checkboxes. T-task table for critical deploy tasks."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "EXCELLENT",
+          "notes": "Multiple state sections: 'Estado actual REAL — junio 2026', 'Estado Operativo' (merged from CURRENT_TASK.md), 'Roadmap actualizado (Julio 2026)'. Extensive ✅/❌ tracking."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "EXCELLENT",
+          "notes": "'Decisiones técnicas globales' section with 14 immutable rules. Design System fully documented. IPC architecture with namespacing. Security implementation complete. i18n and themes detailed."
+        },
+        "limitations_known_bugs": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "'Bug pre-existente documentado' section covering Landing build pre-rendering warnings. Several ❌ items in feature lists indicate known incomplete features."
+        }
+      },
+      "orphan_files": [],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md", "CONTRIBUTING.md"],
+      "recommended_actions": [
+        "Gold standard PROJECT.md. 35KB is large but well-organized.",
+        "CONCERN: Contains content about ALL THREE sub-projects (Motor RAM, Landing, Backend API) in one file. Consider splitting Backend API endpoints and Landing page sections into their respective project PROJECT.md files (currently stubs).",
+        "CONTRIBUTING.md exists — consider linking from PROJECT.md",
+        "Remove stale SaaS/Stripe/license content (lines 293-323 contain Prisma schema fragments with Plan enum, LicenseStatus — these are from pre-OpenSource migration and contradict the OpenSource model)",
+        "Lines 241-248 (rate limiting, Helmet headers) and 249-266 (Stripe verification, secrets) are Backend API content that belongs in NexoAccManager-Backend/PROJECT.md",
+        "Lines 473-496 (Landing Page sections, auth pages, dashboard) are Landing content that belongs in NexoAccManager-Landing/PROJECT.md"
+      ]
+    },
+    {
+      "name": "e14-audit-platform",
+      "path": "/home/sebas/proyectos/e14-audit-platform",
+      "size_bytes": 5371,
+      "size_lines": 117,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "10-phase plan (F1-F10) with status table. Clear phase descriptions."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "Dual status tables: one at top (somewhat stale — shows F1 complete, F2 in progress), one in 'Estado Operativo' section (merged from CURRENT_TASK.md, more detailed — F1-F4 complete, F5-F10 pending). Supabase connected, 37 discrepancies documented."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "3 documented decisions: SQLite vs PostgreSQL, DIVIPOLA codes, mesa_key format. Tech stack table. Resultados Capa 1 scores documented."
+        },
+        "limitations_known_bugs": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "'Limitación conocida' section: coordinate calibration issue causing high scores even on clean acts. 'Bloqueo: Calibración visual necesaria' section documents blocker for F5."
+        }
+      },
+      "orphan_files": [
+        {
+          "file": "acquisition/ARCHITECTURE.md",
+          "path": "/home/sebas/proyectos/e14-audit-platform/acquisition/ARCHITECTURE.md",
+          "size_bytes": 16344,
+          "reason": "16KB standalone architecture document for the acquisition layer. References portal-reverse-engineering-report.md and MVP-IMPLEMENTATION-BLUEPRINT.md as sources of truth — but those files live in e14-auditoria, not here. This doc belongs in e14-auditoria since it references that project's docs.",
+          "action": "MOVE to e14-auditoria/docs/ or MERGE relevant sections into e14-audit-platform PROJECT.md"
+        }
+      ],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md", "acquisition/ARCHITECTURE.md"],
+      "recommended_actions": [
+        "Top status table (lines 8-19) is stale — F2 shows '🔄 En progreso' but Estado Operativo shows F2-F4 as ✅. Consolidate into one status table.",
+        "acquisition/ARCHITECTURE.md (16KB) is orphaned — references docs in e14-auditoria project. Either move to e14-auditoria or absorb into PROJECT.md",
+        "Tokens Supabase section (line 104) is empty placeholder — document or remove",
+        "Update last-modified date (shows 2026-06-22 top, but Estado Operativo is 2026-07-02)"
+      ]
+    },
+    {
+      "name": "supply-radar",
+      "path": "/home/sebas/proyectos/supply-radar",
+      "size_bytes": 6175,
+      "size_lines": 165,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "EXCELLENT",
+          "notes": "Clear vision, problem statement, opportunity analysis. Detailed V1/V1.1/V2.0 roadmap. Market analysis with TAM figures."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "Status clearly stated: MVP V1+V1.1 completed. Sprint activo: V1.2 (SBOM export, recursive mode)."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "EXCELLENT",
+          "notes": "Architecture decisions documented: no ORM/DB/HTTP server, cache in-process, parallelism via semaphore. Package structure detailed. Risk table with mitigations."
+        },
+        "limitations_known_bugs": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "Riesgos técnicos identificados table with impact and mitigation. Notes portability limitations (Linux/macOS only)."
+        }
+      },
+      "orphan_files": [
+        {
+          "file": "reporte-tecnico-MVP-V1.md",
+          "path": "/home/sebas/proyectos/supply-radar/reporte-tecnico-MVP-V1.md",
+          "size_bytes": 5644,
+          "reason": "Standalone technical completion report (125 lines). Documents completed changes. Content could be condensed into PROJECT.md's V1 status section.",
+          "action": "ARCHIVE or MERGE summary into PROJECT.md operational state"
+        },
+        {
+          "file": "docs/DISCOVERY_REPORT.md",
+          "path": "/home/sebas/proyectos/supply-radar/docs/DISCOVERY_REPORT.md",
+          "size_bytes": 6591,
+          "reason": "Discovery/research report (146 lines). Pre-implementation analysis. Historical value but not operational.",
+          "action": "KEEP as reference doc — link from PROJECT.md"
+        },
+        {
+          "file": "docs/TECHNICAL_DESIGN.md",
+          "path": "/home/sebas/proyectos/supply-radar/docs/TECHNICAL_DESIGN.md",
+          "size_bytes": 6741,
+          "reason": "Detailed technical design (221 lines). Overlaps with PROJECT.md architecture section. Could be condensed.",
+          "action": "CONSIDER merging key design decisions into PROJECT.md; keep as reference"
+        }
+      ],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md", "reporte-tecnico-MVP-V1.md", "docs/DISCOVERY_REPORT.md", "docs/TECHNICAL_DESIGN.md", "docs/ARCHITECTURE.md", "docs/REQUIREMENTS.md"],
+      "recommended_actions": [
+        "reporte-tecnico-MVP-V1.md is a completion report — merge key outcomes into PROJECT.md and archive the file",
+        "docs/DISCOVERY_REPORT.md and docs/TECHNICAL_DESIGN.md are pre-build documents — add cross-reference links from PROJECT.md",
+        "Consider adding a 'Referenced Documents' section in PROJECT.md linking to docs/"
+      ]
+    },
+    {
+      "name": "flag-edge",
+      "path": "/home/sebas/proyectos/flag-edge",
+      "size_bytes": 5772,
+      "size_lines": 104,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "Clear problem statement, market positioning, differentiation. V1-V4 roadmap defined. Functional requirements per version."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "Status clearly stated: V3 completado. Sprint goal documented. Completed checklists per version (V1, V2, V3)."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "Architecture section: server-as-source-of-truth, SDK local evaluation, SSE streaming. Stack decisions (Go over Rust) justified. Non-functional requirements defined."
+        },
+        "limitations_known_bugs": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No limitations/bugs section. V4 lists 'Persistencia en DB, autenticación avanzada, multi-tenancy' as pending — these are roadmap items not bugs."
+        }
+      },
+      "orphan_files": [
+        {
+          "file": "docs/REQUIREMENTS.md",
+          "path": "/home/sebas/proyectos/flag-edge/docs/REQUIREMENTS.md",
+          "size_bytes": 4710,
+          "reason": "Detailed functional/non-functional requirements (86 lines). Significant overlap with PROJECT.md sections.",
+          "action": "CONSIDER merging into PROJECT.md or keeping as linked reference"
+        },
+        {
+          "file": "docs/SDK.md",
+          "path": "/home/sebas/proyectos/flag-edge/docs/SDK.md",
+          "size_bytes": 6823,
+          "reason": "SDK documentation (342 lines). Valid standalone reference doc for SDK users.",
+          "action": "KEEP — link from PROJECT.md and README.md"
+        },
+        {
+          "file": "docs/API.md",
+          "path": "/home/sebas/proyectos/flag-edge/docs/API.md",
+          "size_bytes": null,
+          "reason": "API documentation. Valid standalone reference doc.",
+          "action": "KEEP — link from PROJECT.md"
+        },
+        {
+          "file": "SECURITY.md",
+          "path": "/home/sebas/proyectos/flag-edge/SECURITY.md",
+          "size_bytes": null,
+          "reason": "Standard GitHub community health file. Not project-state documentation.",
+          "action": "KEEP — standard file"
+        },
+        {
+          "file": "CODE_OF_CONDUCT.md",
+          "path": "/home/sebas/proyectos/flag-edge/CODE_OF_CONDUCT.md",
+          "size_bytes": null,
+          "reason": "Standard GitHub community health file.",
+          "action": "KEEP — standard file"
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "path": "/home/sebas/proyectos/flag-edge/CONTRIBUTING.md",
+          "size_bytes": null,
+          "reason": "Standard GitHub community health file.",
+          "action": "KEEP — standard file"
+        }
+      ],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md", "docs/REQUIREMENTS.md", "docs/API.md", "docs/SDK.md", "docs/ARCHITECTURE.md", "CODE_OF_CONDUCT.md", "SECURITY.md", "CONTRIBUTING.md"],
+      "recommended_actions": [
+        "Add Limitations/Known Bugs section",
+        "docs/REQUIREMENTS.md duplicates PROJECT.md functional requirements — merge or cross-reference",
+        "10 .md files total — well-organized but add a 'Document Index' in PROJECT.md linking to docs/API.md, docs/SDK.md, docs/ARCHITECTURE.md",
+        "SECURITY.md and CONTRIBUTING.md are GitHub community standards — fine to keep separate"
+      ]
+    },
+    {
+      "name": "grani-usco",
+      "path": "/home/sebas/proyectos/grani-usco",
+      "size_bytes": 5124,
+      "size_lines": 216,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "6-phase roadmap (Scaffolding through Deploy/Polish) with checkboxes. MVP Features table. Landing page structure documented."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "Phase 1 (Scaffolding) marked ✅. Phases 2-6 are ⬜. Project version 0.1.0. Last updated 2026-06-24."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "Stack documented. CSS variables defined. Framer Motion usage example. Tailwind v4 notes. No deep architectural decisions."
+        },
+        "limitations_known_bugs": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No limitations or known bugs section."
+        }
+      },
+      "orphan_files": [],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md"],
+      "recommended_actions": [
+        "NOTE: Content describes TWO different products — Section 2 describes an agricultural commodities platform (Dashboard, CRUD, cotizaciones), but Section 3 describes a restaurant landing page (granizados con alcohol, 'Ver Menú' CTA). This is a contradictory dual-purpose project definition that needs resolution.",
+        "The AGENTS.md is minimal (only nextjs-agent-rules boilerplate — no project context). Populate with actual project context.",
+        "Add Limitations/Known Bugs section",
+        "Resolve contradiction: is this an agricultural platform or a restaurant site? Clarify objective."
+      ]
+    },
+    {
+      "name": "e14-auditoria",
+      "path": "/home/sebas/proyectos/e14-auditoria",
+      "size_bytes": 9826,
+      "size_lines": 247,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "GOOD",
+          "notes": "5-phase implementation roadmap (Foundation through Dashboard). Executive summary with metrics. Clear layer architecture."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "Status: 'En desarrollo — Estructura base únicamente'. Phase 1 has scaffolding ✅ but most items ⬜. Version 0.1.0."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "EXCELLENT",
+          "notes": "Detailed architecture sections: ingestion layer (downloader, queue, rate limiter), processing layer (PDF, signature, OCR, math validator). Stack decisions with justifications. Validation findings table. Technical constraints documented."
+        },
+        "limitations_known_bugs": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "Restricciones Técnicas section documents constraints (curl_cffi requirement, rate limits, zero-padding, magic bytes). Not bugs per se but important limitations."
+        }
+      },
+      "orphan_files": [
+        {
+          "file": "MVP-IMPLEMENTATION-BLUEPRINT.md",
+          "path": "/home/sebas/proyectos/e14-auditoria/MVP-IMPLEMENTATION-BLUEPRINT.md",
+          "size_bytes": 51612,
+          "reason": "Massive 51KB, 1430-line implementation blueprint. Comprehensive technical specification. Far too large to merge into PROJECT.md.",
+          "action": "KEEP as reference — add prominent link from PROJECT.md"
+        },
+        {
+          "file": "portal-reverse-engineering-report.md",
+          "path": "/home/sebas/proyectos/e14-auditoria/portal-reverse-engineering-report.md",
+          "size_bytes": 18229,
+          "reason": "18KB reverse-engineering report (469 lines). Foundational research document. Historical/analytical value.",
+          "action": "KEEP as reference — link from PROJECT.md. Consider moving to docs/ folder"
+        }
+      ],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md", "MVP-IMPLEMENTATION-BLUEPRINT.md", "portal-reverse-engineering-report.md"],
+      "recommended_actions": [
+        "MVP-IMPLEMENTATION-BLUEPRINT.md (51KB) is the true technical spec — PROJECT.md should have a prominent reference link",
+        "portal-reverse-engineering-report.md (18KB) sits loose in root — move to docs/ folder",
+        "PROJECT.md is mostly architectural design; operational state is thin ('scaffolding base only'). Update with any progress since 2026-06-24.",
+        "AGENTS.md references 'cat PROJECT.md → verificar fase activa' — add explicit current phase indicator in PROJECT.md"
+      ]
+    },
+    {
+      "name": "contract-guard",
+      "path": "/home/sebas/proyectos/contract-guard",
+      "size_bytes": 1880,
+      "size_lines": 51,
+      "rating": "OK",
+      "sections": {
+        "roadmap_objective": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "V1-V3 roadmap. Problem statement. Market positioning."
+        },
+        "operational_state": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "MVP V1 completado y push a GitHub. Sprint goal documented."
+        },
+        "technical_decisions": {
+          "present": true,
+          "quality": "ADEQUATE",
+          "notes": "Architecture section (parser, diff, rules, report, cli). Stack documented. No deep design rationale."
+        },
+        "limitations_known_bugs": {
+          "present": false,
+          "quality": "MISSING",
+          "notes": "No limitations or known bugs section."
+        }
+      },
+      "orphan_files": [
+        {
+          "file": "docs/TECHNICAL_DESIGN.md",
+          "path": "/home/sebas/proyectos/contract-guard/docs/TECHNICAL_DESIGN.md",
+          "size_bytes": null,
+          "reason": "Technical design document. May overlap with PROJECT.md architecture section.",
+          "action": "KEEP — link from PROJECT.md"
+        },
+        {
+          "file": "docs/OPERATIONS.md",
+          "path": "/home/sebas/proyectos/contract-guard/docs/OPERATIONS.md",
+          "size_bytes": null,
+          "reason": "Operations guide. Valid standalone reference.",
+          "action": "KEEP — link from PROJECT.md"
+        },
+        {
+          "file": "docs/EXAMPLES.md",
+          "path": "/home/sebas/proyectos/contract-guard/docs/EXAMPLES.md",
+          "size_bytes": null,
+          "reason": "Usage examples. Valid standalone reference.",
+          "action": "KEEP — link from PROJECT.md"
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "path": "/home/sebas/proyectos/contract-guard/CONTRIBUTING.md",
+          "size_bytes": null,
+          "reason": "Standard GitHub community health file.",
+          "action": "KEEP"
+        }
+      ],
+      "all_md_files": ["PROJECT.md", "AGENTS.md", "README.md", "docs/ARCHITECTURE.md", "docs/OPERATIONS.md", "docs/EXAMPLES.md", "docs/TECHNICAL_DESIGN.md", "CONTRIBUTING.md"],
+      "recommended_actions": [
+        "Add Limitations/Known Bugs section",
+        "Compact but complete for MVP stage. Add more detail as V2/V3 development progresses.",
+        "8 .md files — well-organized docs/ folder. Add 'Document Index' in PROJECT.md.",
+        "CONSIDER: Merging docs/TECHNICAL_DESIGN.md into PROJECT.md to avoid duplication"
+      ]
+    }
+  ],
+  "summary": {
+    "ratings_distribution": {
+      "OK": 10,
+      "INCOMPLETE": 0,
+      "MISSING": 2,
+      "NA": 1
+    },
+    "missing_sections_frequency": {
+      "limitations_known_bugs": 8,
+      "roadmap_objective": 2,
+      "operational_state": 2,
+      "technical_decisions": 2
+    },
+    "orphan_files_total": 14,
+    "critical_actions": [
+      {
+        "priority": "URGENT",
+        "projects": ["NexoAccManager-Backend", "NexoAccManager-Landing"],
+        "action": "PROJECT.md files are 9-line stubs. These projects have extensive AGENTS.md content and are well-documented in the parent NexoAccManager PROJECT.md (35KB). Migrate content from parent and AGENTS.md into their own PROJECT.md files immediately."
+      },
+      {
+        "priority": "HIGH",
+        "projects": ["NexoAccManager"],
+        "action": "35KB PROJECT.md contains stale pre-OpenSource content (SaaS plans, Stripe, license Prisma fragments). Remove or archive these sections — they contradict the MIT OpenSource model."
+      },
+      {
+        "priority": "HIGH",
+        "projects": ["grani-usco"],
+        "action": "PROJECT.md describes two contradictory products (agricultural commodities platform vs. restaurant site). Resolve project identity."
+      },
+      {
+        "priority": "MEDIUM",
+        "projects": ["e14-audit-platform"],
+        "action": "Dual status tables with conflicting state (F2 shows 'in progress' vs 'completed'). Consolidate."
+      },
+      {
+        "priority": "MEDIUM",
+        "projects": ["e14-auditoria"],
+        "action": "Move loose 18KB portal-reverse-engineering-report.md into docs/ folder."
+      },
+      {
+        "priority": "LOW",
+        "projects": ["supply-radar", "flag-edge", "contract-guard", "portafolio", "triqui"],
+        "action": "Add 'Document Index' or 'Referenced Documents' section in PROJECT.md linking to docs/ files."
+      }
+    ],
+    "overall_health": "GOOD — 10/13 projects have solid PROJECT.md files. The NexoAccManager ecosystem (3 repos) needs the most attention: the parent is excellent but overloaded, and the two sub-projects have empty stubs. The most common missing section across all projects is 'Limitations/Known Bugs' (8/13 projects lack it)."
+  }
+}
