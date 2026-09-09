@@ -1,0 +1,248 @@
+{
+  "timestamp": "2026-08-28T14:15:00-05:00",
+  "ecosystem_health": "warn",
+  "projects": [
+    {
+      "name": "NexoAccManager",
+      "dirty_files": 1,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-27 19:29:27 -0500",
+      "branch": "main",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 26,
+      "notes": "All quality gates passing. IPC 102=102=102 sync. Large build artifacts in release/ (expected)."
+    },
+    {
+      "name": "Tic-Tac-Toe",
+      "dirty_files": 1,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-25 21:24:28 -0500",
+      "branch": "master",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 0,
+      "notes": "Clean repo, minimal activity"
+    },
+    {
+      "name": "contract-guard",
+      "dirty_files": 14,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-04 12:12:09 -0500",
+      "branch": "main",
+      "git_health": "WARN",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 2,
+      "notes": "14 untracked files, last commit 24 days ago. Rolldown bindings in node_modules (expected)"
+    },
+    {
+      "name": "e14-fraud-detector",
+      "dirty_files": 5,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-04 12:08:57 -0500",
+      "branch": "main",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 7,
+      "notes": "Python venv heavy libs (cv2, pymupdf, numpy, scipy) - expected in venv/"
+    },
+    {
+      "name": "flag-edge",
+      "dirty_files": 1,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-09 00:58:50 -0500",
+      "branch": "main",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 1,
+      "notes": "Clean, binary in root (flag-edge) - verify if should be gitignored"
+    },
+    {
+      "name": "grani-usco",
+      "dirty_files": 7,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 20:17:06 -0500",
+      "branch": "main",
+      "git_health": "WARN",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 3,
+      "notes": "7 dirty files, next/swc binaries and turbopack cache in node_modules/.next"
+    },
+    {
+      "name": "nexocore",
+      "dirty_files": 31,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-09 22:27:07 -0500",
+      "branch": "main",
+      "git_health": "BAD",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 15,
+      "notes": "31 dirty files - highest in ecosystem. Heavy next.js turbopack cache and prisma engines. Needs cleanup or .gitignore review"
+    },
+    {
+      "name": "nva-demons",
+      "dirty_files": 0,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-25 21:24:34 -0500",
+      "branch": "main",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 7,
+      "notes": "Clean working tree. Next.js turbopack cache files in .next/ (expected in dev)"
+    },
+    {
+      "name": "nx-music",
+      "dirty_files": 3,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-25 21:24:53 -0500",
+      "branch": "main",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 8,
+      "notes": "Dual venv (3.12 + 3.14) with llvmlite (171MB each) - heavy deps. Verify if both venvs needed"
+    },
+    {
+      "name": "portafolio",
+      "dirty_files": 0,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-25 21:24:21 -0500",
+      "branch": "main",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 12,
+      "notes": "Clean working tree. Heavy node_modules (next/swc 125MB each, swc/core 37MB, sharp libs). .next/standalone dup"
+    },
+    {
+      "name": "reports",
+      "dirty_files": 37,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 15:51:57 -0500",
+      "branch": "main",
+      "git_health": "BAD",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 0,
+      "notes": "37 dirty files - very high. Old commit (25 days). Likely report files not committed. Review needed"
+    },
+    {
+      "name": "supply-radar",
+      "dirty_files": 5,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 19:04:13 -0500",
+      "branch": "feat/sbom-export-spdx-cyclonedx",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 0,
+      "notes": "On feature branch. Clean-ish but old commit"
+    },
+    {
+      "name": "synthetic-trader",
+      "dirty_files": 69,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-25 21:24:13 -0500",
+      "branch": "main",
+      "git_health": "BAD",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 18,
+      "notes": "69 dirty files - SECOND HIGHEST. Dashboard next.js cache + pyarrow/numpy/scipy/uvloop in venv. Recent commit but messy working tree"
+    },
+    {
+      "name": "triqui",
+      "dirty_files": 2,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-07-31 17:17:45 -0500",
+      "branch": "main",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 0,
+      "notes": "Old commit (28 days). Clean otherwise"
+    },
+    {
+      "name": "wifi-pentest",
+      "dirty_files": 2,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 20:17:08 -0500",
+      "branch": "main",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 0,
+      "notes": "Clean, old commit"
+    },
+    {
+      "name": "wordlists",
+      "dirty_files": 3,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 04:04:05 -0500",
+      "branch": "master",
+      "git_health": "OK",
+      "has_project_md": true,
+      "has_readme_md": true,
+      "big_files_untracked": 0,
+      "notes": "Clean, old commit"
+    }
+  ],
+  "repairs_made": [
+    "None - no auto-repairable issues found this cycle"
+  ],
+  "hermes_issues": [
+    {
+      "issue": "auth.json has 7 NVIDIA credentials (expected 6 per plan)",
+      "severity": "info",
+      "detail": "hermes auth list shows 7 nvidia entries. Plan specifies exactly 6. Entry #7 is 'NVIDIA_API_KEY' (no suffix) which may be a duplicate/legacy"
+    },
+    {
+      "issue": "config.yaml model.provider grep returned empty in sweep script but value is 'nvidia'",
+      "severity": "info",
+      "detail": "Direct grep on line 3 shows 'provider: nvidia' - sweep script awk pattern failed due to spacing. Config is correct."
+    }
+  ],
+  "needs_attention": [
+    {
+      "project": "nexocore",
+      "reason": "31 dirty files (BAD) - review .gitignore for .next/ turbopack cache, prisma engines, next/swc binaries",
+      "priority": "HIGH"
+    },
+    {
+      "project": "synthetic-trader",
+      "reason": "69 dirty files (BAD) - review .gitignore for dashboard/.next/ cache, .venv/ heavy libs, pyarrow",
+      "priority": "HIGH"
+    },
+    {
+      "project": "reports",
+      "reason": "37 dirty files (BAD) - old commit 25 days ago. Likely uncommitted report files. Commit or clean.",
+      "priority": "HIGH"
+    },
+    {
+      "project": "contract-guard",
+      "reason": "14 dirty files (WARN) - 24 days since last commit. Review untracked files.",
+      "priority": "MEDIUM"
+    },
+    {
+      "project": "grani-usco",
+      "reason": "7 dirty files (WARN) - 25 days since last commit. next.js turbopack cache in .gitignore?",
+      "priority": "MEDIUM"
+    },
+    {
+      "project": "nx-music",
+      "reason": "Dual python venv (3.12 + 3.14) with 171MB llvmlite each - 342MB total. Consolidate to one venv.",
+      "priority": "MEDIUM"
+    },
+    {
+      "project": "flag-edge",
+      "reason": "Binary 'flag-edge' in repo root (13MB) - verify if should be gitignored or in release/",
+      "priority": "LOW"
+    }
+  ],
+  "summary": {
+    "total_projects": 17,
+    "git_health_ok": 9,
+    "git_health_warn": 2,
+    "git_health_bad": 4,
+    "projects_missing_project_md": 0,
+    "projects_missing_readme_md": 0,
+    "state_db_integrity": "ok",
+    "memory_md_chars": 1127,
+    "memory_md_status": "OK (<1200)",
+    "agents_md_clean": true,
+    "model_provider": "nvidia",
+    "nvidia_credentials": 7
+  }
+}

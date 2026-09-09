@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-08-17T20:00:00-05:00",
+  "ecosystem_health": "warn",
+  "projects": [
+    {
+      "path": "/home/sebas/proyectos/Tic-Tac-Toe",
+      "git_status": "warn",
+      "dirty_files": 6,
+      "last_commit": "sebasvelascodev3101@gmail.com | 2026-08-03 19:35:58 -0500",
+      "branch": "master",
+      "project_md": true,
+      "readme_md": true,
+      "large_untracked": []
+    },
+    {
+      "path": "/home/sebas/proyectos/reports",
+      "git_status": "bad",
+      "dirty_files": 16,
+      "last_commit": "sebasvelascodev3101@gmail.com | 2026-08-03 15:51:57 -0500",
+      "branch": "main",
+      "project_md": true,
+      "readme_md": true,
+      "large_untracked": []
+    },
+    {
+      "path": "/home/sebas/proyectos/wordlists",
+      "git_status": "ok",
+      "dirty_files": 3,
+      "last_commit": "sebasvelascodev3101@gmail.com | 2026-08-03 04:04:05 -0500",
+      "branch": "master",
+      "project_md": true,
+      "readme_md": true,
+      "large_untracked": [
+        {
+          "file": "rockyou.txt",
+          "size_mb": 13,
+          "in_gitignore": true
+        }
+      ]
+    }
+  ],
+  "repairs_made": [],
+  "hermes_issues": [
+    {
+      "issue": "nvidia credential pool has 7 entries (expected 6)",
+      "severity": "warn",
+      "detail": "One extra credential entry in pool. No errors reported on any entry."
+    },
+    {
+      "issue": "active_provider is None",
+      "severity": "warn",
+      "detail": "No active provider set in auth.json. May cause rotation issues."
+    },
+    {
+      "issue": "reports project has 16 dirty files",
+      "severity": "bad",
+      "detail": "Accumulated diagnostic reports and markers not committed. Needs cleanup or commit."
+    }
+  ],
+  "needs_attention": [
+    "reports project: commit or clean 16 untracked/modified files (diagnostic reports from cron jobs)",
+    "nvidia credential pool: verify if 7 entries is intentional or if one should be pruned",
+    "active_provider: consider setting explicit active provider in auth.json"
+  ]
+}

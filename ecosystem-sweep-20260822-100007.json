@@ -1,0 +1,192 @@
+{
+  "timestamp": "2026-08-22T10:00:07-05:00",
+  "ecosystem_health": "warn",
+  "projects": [
+    {
+      "name": "portafolio",
+      "dirty_files": 3,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-13 14:47:29 -0500",
+      "branch": "main",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "supply-radar",
+      "dirty_files": 5,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 19:04:13 -0500",
+      "branch": "feat/sbom-export-spdx-cyclonedx",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": [
+        "/home/sebas/proyectos/supply-radar/supply-radar"
+      ]
+    },
+    {
+      "name": "reports",
+      "dirty_files": 25,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 15:51:57 -0500",
+      "branch": "main",
+      "status": "BAD",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "contract-guard",
+      "dirty_files": 14,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-04 12:12:09 -0500",
+      "branch": "main",
+      "status": "WARN",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "wordlists",
+      "dirty_files": 3,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 04:04:05 -0500",
+      "branch": "master",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": [
+        "/home/sebas/proyectos/wordlists/rockyou.txt"
+      ]
+    },
+    {
+      "name": "grani-usco",
+      "dirty_files": 7,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 20:17:06 -0500",
+      "branch": "main",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "wifi-pentest",
+      "dirty_files": 2,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 20:17:08 -0500",
+      "branch": "main",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "nx-music",
+      "dirty_files": 5,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-21 19:28:38 -0500",
+      "branch": "main",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "e14-fraud-detector",
+      "dirty_files": 5,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-04 12:08:57 -0500",
+      "branch": "main",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "nexocore",
+      "dirty_files": 23,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-09 22:27:07 -0500",
+      "branch": "main",
+      "status": "BAD",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "synthetic-trader",
+      "dirty_files": 37,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-20 16:15:34 -0500",
+      "branch": "main",
+      "status": "CRIT",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "nva-demons",
+      "dirty_files": 18,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-09 22:27:07 -0500",
+      "branch": "main",
+      "status": "BAD",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "flag-edge",
+      "dirty_files": 2,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-09 00:58:50 -0500",
+      "branch": "main",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": [
+        "/home/sebas/proyectos/flag-edge/flag-edge-test",
+        "/home/sebas/proyectos/flag-edge/flag-edge"
+      ]
+    },
+    {
+      "name": "triqui",
+      "dirty_files": 2,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-07-31 17:17:45 -0500",
+      "branch": "main",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    },
+    {
+      "name": "NexoAccManager",
+      "dirty_files": 21,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-20 16:15:17 -0500",
+      "branch": "main",
+      "status": "BAD",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": [
+        "/home/sebas/proyectos/NexoAccManager/release/NX-Manager-4.0.9.AppImage",
+        "/home/sebas/proyectos/NexoAccManager/release/NX-Manager-4.2.0.AppImage",
+        "/home/sebas/proyectos/NexoAccManager/release/nx-manager_4.1.0_amd64.snap",
+        "/home/sebas/proyectos/NexoAccManager/release/linux-unpacked/resources/app.asar",
+        "/home/sebas/proyectos/NexoAccManager/release/linux-unpacked/nx-manager"
+      ]
+    },
+    {
+      "name": "Tic-Tac-Toe",
+      "dirty_files": 7,
+      "last_commit": "sebasvelascodev3101@gmail.com 2026-08-03 19:35:58 -0500",
+      "branch": "master",
+      "status": "OK",
+      "project_md": true,
+      "readme_md": true,
+      "large_files": []
+    }
+  ],
+  "repairs_made": [],
+  "hermes_issues": [
+    {
+      "type": "memory_size",
+      "description": "MEMORY.md size is 1484 chars (>1200 limit)",
+      "action_needed": "compactar entries obsoletas"
+    }
+  ],
+  "needs_attention": [
+    "Auto-repair for credential pool not performed - auth.json cannot be read directly",
+    "Check if any .git/hooks need updating",
+    "Verify that no profile AGENTS.md contains forbidden content"
+  ]
+}
